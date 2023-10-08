@@ -1,0 +1,160 @@
+
+  
+
+.first h1 {
+    color: white;
+    font-size: 50px;
+    text-align: left;
+    width: 100%; /* Change to 100% to make it responsive */
+    max-width: 600px; /* Set a maximum width for larger screens */
+    margin: 0 auto; /* Center the text horizontally */
+  }
+  
+  .first p {
+    color: grey;
+    text-align: left;
+    width: 100%; /* Change to 100% to make it responsive */
+    max-width: 600px; /* Set a maximum width for larger screens */
+    margin: 0 auto; /* Center the text horizontally */
+  }
+  
+  .first img {
+    max-width: 100%;
+  }
+  .first div{
+    width: 70%;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  
+  /* Media Query for Larger Screens */
+  @media screen and (min-width: 768px) {
+    .first {
+      flex-direction: row; /* Revert to row layout on larger screens */
+      justify-content: flex-start;
+      text-align: left; /* Left align text on larger screens */
+    }
+  }
+  .contest-page {
+    background: rgb(151,76,239);
+background: linear-gradient(90deg, rgba(151,76,239,1) 0%, rgba(23,0,29,1) 40%, rgba(29,130,160,1) 100%);
+    padding: 2rem; /* Responsive padding */
+  }
+  
+  .upcoming {
+    text-align: left;
+    padding: 1rem; /* Responsive padding */
+  }
+  
+  .upcoming h1 {
+    color: white;
+    font-size: 2rem; /* Responsive font size */
+  }
+  
+  .contest1 {
+    width: 100%; /* Responsive width */
+    max-width: 800px; /* Set a maximum width for larger screens */
+    margin: auto;
+    padding: 1rem;
+    padding-left: 2rem; /* Responsive padding */
+    background-color: #272626;
+    border-radius: 25px;
+    border: solid 1px rgb(101, 100, 100);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 1rem; /* Add margin between contests */
+  }
+  
+  
+  .contest1:hover {
+    transform: scale(1.1);
+  }
+  
+  .contest1 h2 {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem; /* Responsive font size */
+  }
+  
+  .inside-contest {
+    display: flex;
+    flex-wrap: wrap; /* Allow contents to wrap on smaller screens */
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .inside-contest div {
+    color: white;
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 1rem; /* Add space between contest details */
+  }
+  
+  .inside-contest img {
+    width: 30%; /* Adjust image size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+  }
+  
+  /* Media Query for Larger Screens */
+  @media screen and (min-width: 768px) {
+    .contest1 {
+      width: 70%;
+      padding-left: 5rem; /* Adjust padding for larger screens */
+    }
+  
+    .inside-contest div {
+      width: 40%;
+      margin-bottom: 0; /* Remove margin between contest details */
+    }
+  
+    .inside-contest img {
+      width: 18%;
+      height: 130px;
+    }
+  }
+  
+.past-contest{
+    text-align: left;
+    color: white;
+}
+.past-contest p{
+    font-size: larger;
+    color: rgb(255, 250, 250);
+    margin-left: 50px;
+}
+.pastinfo{
+    text-align:center;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+.pastinfo thead th {
+    padding: 25px;
+    color:#fffdfd;
+    font-size:18px;
+    font-weight:bold;
+  }
+.pastinfo tbody td {
+    padding:15px 25px;
+    background:#2d2143;
+    font-size:16px;
+    border-bottom:5px solid #7c1ad8;
+  }
+
+.contest-animation{
+  display: flex;
+  justify-content: space-between;
+}  
+
+.contest4{
+  display: block;
+}
+
+.past-contest p{
+  color: aliceblue;
+}

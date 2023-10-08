@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(151,76,239);
+background: linear-gradient(90deg, rgba(151,76,239,1) 0%, rgba(23,0,29,1) 40%, rgba(29,130,160,1) 100%);
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .developer-box {
+    width: calc(23% - 20px);
+    padding: 20px;
+    margin: 5px; /* Reduced margin from 10px to 5px */
+    background: rgb(151,76,239);
+background: linear-gradient(90deg, rgb(131, 56, 217) 0%, rgb(16, 2, 20) 40%, rgb(157, 89, 197) 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    height: 350px; /* Decreased height */
+  }
+
+  .developer-box:hover {
+    transform: translateY(-10px);
+  }
+
+  .developer-photo {
+    width: 100%;
+    height: 100%; /* Match the box size */
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+  }
+
+  .developer-photo img {
+    object-fit: cover; /* Make the image cover the entire area */
+    width: 100%;
+    height: 100%;
+  }
+
+  .developer-info {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s, transform 0.3s;
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+
+  .developer-box:hover .developer-info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  /* Default styles for larger screens */
+.container {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+flex-wrap: wrap;
+}
+
+.developer-box {
+width: calc(23% - 20px);
+padding: 20px;
+margin: 5px;
+background-color: #ffffff;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center;
+transition: transform 0.3s;
+border-radius: 8px;
+overflow: hidden;
+position: relative;
+cursor: pointer;
+height: 350px;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+.container {
+justify-content: center;
+}
+
+.developer-box {
+width: calc(50% - 20px);
+}
+}
+
+/* Responsive styles for even smaller screens */
+@media screen and (max-width: 480px) {
+.developer-box {
+width: calc(100% - 20px);
+}
+}
